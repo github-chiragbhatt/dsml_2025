@@ -1,16 +1,14 @@
-name: CI Pipeline
+name: CI 
 
 on:
   push:
     branches:
       - main
-      # - any-feature-branch
+
 
 jobs:
   job1:
-    build-and-test:
       runs-on: ubuntu-latest
-
       steps:
         - name: Checkout code
           uses: actions/checkout@v4
